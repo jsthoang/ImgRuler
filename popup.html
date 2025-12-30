@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 15px 0;
+      color: #333;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .btn-primary {
+      background: #4CAF50;
+      color: white;
+    }
+    .btn-secondary {
+      background: #2196F3;
+      color: white;
+    }
+    .btn-danger {
+      background: #f44336;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .input-group {
+      margin: 10px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-size: 12px;
+    }
+    input, select {
+      width: calc(100% - 20px);
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    select {
+      width: 100%;
+    }
+    .info {
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h3>Length Meter</h3>
+  
+  <div class="input-group">
+    <label>Reference Length:</label>
+    <input type="number" id="refLength" placeholder="Enter known length" step="0.01">
+  </div>
+  
+  <div class="input-group">
+    <label>Unit:</label>
+    <select id="unit">
+      <option value="mm" selected>mm</option>
+      <option value="cm">cm</option>
+      <option value="m">m</option>
+      <option value="inch">inch</option>
+      <option value="ft">ft</option>
+    </select>
+  </div>
+  
+  <button class="btn btn-primary" id="setReference">Set Reference Length</button>
+  <button class="btn btn-secondary" id="measure">Measure Length</button>
+  <button class="btn btn-danger" id="clear">Clear All</button>
+  
+  <div class="info">
+    <strong>How to use:</strong><br>
+    1. Enter a known length<br>
+    2. Click "Set Reference" and draw on the reference object<br>
+    3. Click "Measure" to measure other objects
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
