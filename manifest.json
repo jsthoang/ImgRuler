@@ -3,6 +3,12 @@
     "name": "Length Meter",
     "version": "1.0",
     "description": "Measure lengths on web pages based on a reference length",
+    "icons": {
+        "16": "tape.png",
+        "32": "tape.png",
+        "48": "tape.png",
+        "128": "tape.png"
+    },
     "permissions": ["activeTab", "scripting"],
     "host_permissions": ["<all_urls>"],
     "action": {},
